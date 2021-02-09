@@ -12,11 +12,14 @@
         while(($numeros[$i] * $numeros[$i]) < $num){
             $num_mult = $numeros[$i];
             foreach($numeros as $key =>$value){
-                if($numeros[$key] % $num_mult === 0 && $numeros[$key] !== $num_mult){
+                if($value % $num_mult === 0 && $value !== $num_mult){
                     unset($numeros[$key]);
+                    var_dump($numeros);
+                    echo '<hr>';
                 }
             }
             $i++;
+            var_dump($i);
         }
 
         foreach($numeros as $primo){
@@ -25,6 +28,7 @@
     }
 
     echo "<h4>La criba de Eratóstanes</h4>";
-    eratostenes(40);
+    eratostenes(50);
 
 ?>
+
