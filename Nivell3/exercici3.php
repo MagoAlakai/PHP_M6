@@ -18,6 +18,7 @@
                     echo '<hr>';
                 }
             }
+            $numeros = array_values($numeros);
             $i++;
             var_dump($i);
         }
@@ -28,7 +29,7 @@
     }
 
     echo "<h4>La criba de Eratóstanes</h4>";
-    eratostenes(50);
+    eratostenes(100);
 
 ?>
 
